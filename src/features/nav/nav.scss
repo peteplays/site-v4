@@ -1,0 +1,53 @@
+.navSection {
+  position: fixed;
+  top: 35%;
+  left: 96%;
+  font-size: 25px;
+
+  & .fa {
+    display: block;
+    padding-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+
+    &:active,
+    &:focus,
+    &:hover {
+      transform: scale(1.2);
+      color: rgba(60, 174, 255, 0.7);
+    }
+  }
+
+  ul {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 5px 0 4px;
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    border-radius: 6px;
+    text-shadow: 1px 1px 10px #CBA52B;
+    cursor: pointer;
+
+    a {
+      color: rgba(225, 225, 225, 0.5);
+      text-decoration: none;
+    }
+  }
+
+  .active {
+    color: #63CBC4;
+  }
+
+  .fa-ellipsis-c {
+    padding-left: 8px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navSection {
+    left: 94%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navSection {
+    left: 91%;
+  }
+}

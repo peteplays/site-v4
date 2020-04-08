@@ -1,0 +1,35 @@
+.footerSection {
+  .fa {
+    color: #ddd;
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 2px 2px 1px #333;
+    opacity: 0.8;
+  }
+
+  .fa-linkedin-square {
+    &:hover {
+      color: #0160A7;
+    }
+  }
+
+  .fa-twitter-square {
+    &:hover {
+      color: #4298ED;
+    }
+  }
+
+  .fa-github-square {
+    &:hover {
+      color: #555;
+    }
+  }
+
+  .fa-envelope-square {
+    &:hover {
+      color: #40B879;
+    }
+  }
+}
+
+

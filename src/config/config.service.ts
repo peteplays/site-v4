@@ -83,11 +83,6 @@ const projectSection: IProjectSection[] = [
     'description': 'This is an app where the user can enter where they live and where they would like the `new` office location.'
   },
   {
-    'title': 'Pete\'s Ice Cream House',
-    'link': '/petesicecreamhouse',
-    'description': 'At Pete\'s Ice Cream House you can select an ice cream cone, ice cream float, or a milkshake. There are six different flavors of ice cream, two different types of cones, three different soda flavors, and 3 different types of milk.'
-  },
-  {
     'title': 'Pete\'s Food Blog',
     'link': 'https://peteplays.wordpress.com/',
     'description': 'Check out some awesome food. (There is a lot of pizza)'

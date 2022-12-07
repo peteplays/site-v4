@@ -73,16 +73,6 @@ const sections: ISections[] = [
 
 const projectSection: IProjectSection[] = [
   {
-    'title': 'Play\'s Lotto',
-    'link': 'https://plays-lotto.herokuapp.com/',
-    'description': 'This is an app for a user and teammates to estimate the effort of a given task.'
-  },
-  {
-    'title': 'Finding a new office',
-    'link': 'https://new-home.herokuapp.com/',
-    'description': 'This is an app where the user can enter where they live and where they would like the `new` office location.'
-  },
-  {
     'title': 'Pete\'s Food Blog',
     'link': 'https://peteplays.wordpress.com/',
     'description': 'Check out some awesome food. (There is a lot of pizza)'
@@ -91,11 +81,6 @@ const projectSection: IProjectSection[] = [
     'title': 'CODE talk',
     'link': 'https://vimeo.com/84447257',
     'description': 'I took the Android side of the age old debate... Android VS. iOS.  Check out the debate!'
-  },
-  {
-    'title': 'CHS Tech Girl',
-    'link': 'http://www.chstechgirl.com/from-a-dance-instructor-to-a-software-engineer/',
-    'description': 'Suzelle Santos came by our office to interview our team about CODEcamp.'
   }
 ]
 

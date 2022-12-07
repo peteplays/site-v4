@@ -13,7 +13,8 @@ const links: ILink[] = [
   {
     name: 'Content',
     // path: '/content',
-    path: '(/|/content)',
+    // path: '(/|/content)',
+    path: '/',
     comp: Content,
   },
   {

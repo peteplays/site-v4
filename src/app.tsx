@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './app.scss';
 
@@ -9,15 +9,15 @@ function App() {
   return (
     <Router>
       {configService.links &&
-        <Switch>
+        <Routes>
           {configService.links.map((l, i) =>
             <Route
               key={i}
-              exact path={l.path}
-              render={() => <l.comp />}
+              path={l.path}
+              element={<l.comp />}
             />
           )}
-        </Switch>
+        </Routes>
       }
     </Router>
   );

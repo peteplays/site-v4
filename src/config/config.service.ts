@@ -74,15 +74,25 @@ const sections: ISections[] = [
 
 const projectSection: IProjectSection[] = [
   {
+    'title': 'Spotify to YTMusic',
+    'link': 'https://flip.peteplays.com/',
+    'description': 'Paste in a Spotify track link and get the YT Music link'
+  },
+  {
+    'title': 'Lorem Bitters',
+    'link': 'https://bitters.vercel.app/',
+    'description': 'Lorem site for bitters'
+  },
+  {
+    'title': 'Doggy ID',
+    'link': 'https://doggy.peteplays.com/',
+    'description': 'Doggy ID for service dogs'
+  },
+  {
     'title': 'Pete\'s Food Blog',
     'link': 'https://peteplays.wordpress.com/',
     'description': 'Check out some awesome food. (There is a lot of pizza)'
   },
-  {
-    'title': 'CODE talk',
-    'link': 'https://vimeo.com/84447257',
-    'description': 'I took the Android side of the age old debate... Android VS. iOS.  Check out the debate!'
-  }
 ]
 
 const contactLinks: IContactLink[] = [
@@ -95,11 +105,6 @@ const contactLinks: IContactLink[] = [
     name: 'GitHub',
     link: 'https://github.com/peteplays',
     icon: 'fa-github-square'
-  },
-  {
-    name: 'Twitter',
-    link: 'https://twitter.com/peteplays',
-    icon: 'fa-twitter-square'
   },
   {
     name: 'Email',

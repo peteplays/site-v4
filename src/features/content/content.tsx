@@ -1,6 +1,3 @@
-import React from 'react';
-// import { animateScroll as scroll } from 'react-scroll';
-
 import Footer from '../footer/footer';
 import Nav from '../nav/nav';
 import Projects from '../projects/projects';
@@ -10,14 +7,16 @@ import { configService } from '../../config/config.service';
 import { SectionNames } from '../../config/config.enum';
 
 import './content.scss';
-import playsLogo2 from '../../assets/playsLogo2.png';
 
 const Content = () => {
   return (
     <div>
       <Nav />
 
-      <div className='sb-bg sb-bg-1' id={configService.getSectionId(SectionNames.TopSection)}>
+      <div
+        className='sb-bg sb-bg-1'
+        id={configService.getSectionId(SectionNames.TopSection)}
+      >
         <div className='textCenter plays-banner'>
           <h1 className='fontStyle'>peteplays</h1>
         </div>
@@ -28,29 +27,32 @@ const Content = () => {
       </div>
 
       <div className='sb-bg sb-bg-2' />
-      <Quotes sectionId={configService.getSectionId(SectionNames.QuotesSection)} />
+      <Quotes
+        sectionId={configService.getSectionId(SectionNames.QuotesSection)}
+      />
 
       <div className='sb-bg sb-bg-3' />
-      <Projects sectionId={configService.getSectionId(SectionNames.ProjectSection)} />
+      <Projects
+        sectionId={configService.getSectionId(SectionNames.ProjectSection)}
+      />
 
       <div className='sb-bg sb-bg-4' />
-      <div className='sb-color' id={configService.getSectionId(SectionNames.MoreSection)}>
+      <div
+        className='sb-color'
+        id={configService.getSectionId(SectionNames.MoreSection)}
+      >
         <h2 className='textCenter fontStyle'>
           There is always more around the corner... Stay tuned!
         </h2>
       </div>
 
-      <div className='sb-bg sb-bg-5'>
-        <img
-          className='speaker-plays-thumb-logo'
-          src={playsLogo2}
-          alt='PetePlays thumbs up logo'
-        />
-      </div>
+      <div className='sb-bg sb-bg-5' />
 
-      <Footer sectionId={configService.getSectionId(SectionNames.FooterSection)} />
+      <Footer
+        sectionId={configService.getSectionId(SectionNames.FooterSection)}
+      />
     </div>
-  )
-}
+  );
+};
 
 export default Content;

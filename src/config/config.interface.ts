@@ -1,4 +1,4 @@
-import type { ComponentType } from 'react';
+import type { ReactNode } from 'react';
 
 export interface IConfig {
   links: ILink[];
@@ -7,7 +7,7 @@ export interface IConfig {
 export interface ILink {
   name: string;
   path: string;
-  comp: ComponentType<any>;
+  element: ReactNode;
 }
 
 export interface ISections {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { configService } from '../../config/config.service';
 
 import './quotes.scss';
@@ -17,7 +15,7 @@ const Quotes = ({ sectionId }: { sectionId: string }) => {
       <i className='fa fa-angle-double-right' />
       {Object.keys(quote)}
     </h2>
-  )
-}
+  );
+};
 
 export default Quotes;

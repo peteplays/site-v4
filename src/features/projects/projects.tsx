@@ -12,8 +12,12 @@ const Projects = ({ sectionId }: { sectionId: string }) => {
           <li key={i}>
             <div className='projectSectionSite'>
               <a href={p.link} target='_blank' rel='noopener noreferrer'>
-                <i className='fa fa-globe' />
+                <i
+                  className='fa fa-globe globeLeft'
+                  style={{ marginRight: '10px' }}
+                />
                 {p.title}
+                <i className='fa fa-globe globeRight' />
               </a>
             </div>
             <div className='projectSectionDescription'>{p.description}</div>
@@ -25,15 +29,3 @@ const Projects = ({ sectionId }: { sectionId: string }) => {
 };
 
 export default Projects;
-
-//   <div className='project-section-record' *ngFor='let project of projects'>
-//   <div className='project-section-site'>
-//     <a href='{{project.link}}' target='_blank'>
-//       <i className='fa fa-globe'></i>
-//       {{ project.title }}
-//     </a>
-//   </div>
-//   <div className='project-section-description'>
-//     <p>{{ project.description }}</p>
-//   </div>
-// </div>

@@ -1,4 +1,6 @@
 $yellow: #cba52b;
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
 
 .projectSection {
   color: $yellow;
@@ -8,14 +10,16 @@ $yellow: #cba52b;
   }
 
   ul {
-    padding: 0 50px;
+    padding: 0;
 
     li {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       font-size: 20px;
       margin-top: 15px;
+      text-align: center;
 
       &:not(:last-child) {
         padding-bottom: 15px;
@@ -23,18 +27,29 @@ $yellow: #cba52b;
       }
 
       .projectSectionSite {
-        flex: 0 0 28%;
-        text-align: right;
-        margin-right: 15px;
+        width: 100%;
+        margin: 0 0 10px;
+        text-align: center;
+
+        .globeLeft {
+          display: inline-block;
+        }
+
+        .globeRight {
+          display: none;
+        }
 
         a {
-          padding: 0 20px 0 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
           color: $yellow;
           text-decoration: none;
 
           i {
-            font-size: 140%;
-            margin-right: 10px !important;
+            font-size: 120%;
+            margin-left: 8px;
           }
 
           &:hover {
@@ -45,7 +60,75 @@ $yellow: #cba52b;
       }
 
       .projectSectionDescription {
-        flex: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-medium) {
+    ul {
+      padding: 0 30px 0 0;
+
+      li {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+
+        .projectSectionSite {
+          flex: 0 0 40%;
+          margin: 0 10px 0 0;
+          text-align: right;
+
+          .globeLeft {
+            display: none;
+          }
+
+          .globeRight {
+            display: inline-block;
+          }
+
+          a {
+            justify-content: flex-end;
+            padding: 0 15px 0 0;
+
+            i {
+              font-size: 120%;
+              margin-left: 8px;
+            }
+          }
+        }
+
+        .projectSectionDescription {
+          // flex: 0 0 60%;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-large) {
+    ul {
+      padding: 0 50px;
+
+      li {
+        font-size: 20px;
+
+        .projectSectionSite {
+          flex: 0 0 28%;
+          margin-right: 0;
+
+          a {
+            padding: 0 15px 0 0;
+            i {
+              font-size: 140%;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .projectSectionDescription {
+          flex: 0 0 68%;
+        }
       }
     }
   }

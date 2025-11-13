@@ -1,3 +1,5 @@
+import type { ComponentType } from 'react';
+
 export interface IConfig {
   links: ILink[];
 }
@@ -5,7 +7,7 @@ export interface IConfig {
 export interface ILink {
   name: string;
   path: string;
-  comp: Function;
+  comp: ComponentType<any>;
 }
 
 export interface ISections {

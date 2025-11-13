@@ -11,9 +11,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.5",
-    "react-scripts": "5.0.1",
     "react-scroll": "^1.9.3",
-    "sass": "^1.94.0",
     "serve": "^14.2.5"
   },
   "devDependencies": {
@@ -24,20 +22,18 @@
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.4",
     "@types/react-dom": "^19.2.3",
-    "@types/react-router-dom": "^5.3.3",
     "@types/react-scroll": "^1.8.10",
+    "@vitejs/plugin-react": "^4.3.1",
+    "sass-embedded": "^1.80.3",
     "tslint-react": "^5.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^5.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "serve -s build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "serve -s dist"
   },
   "browserslist": {
     "production": [

@@ -1,8 +1,9 @@
 {
-  "cSpell.words": [
-    "browserslist",
-    "linkedin",
-    "mailto",
-    "petesicecreamhouse"
-  ]
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#453006",
+    "statusBar.foreground": "#d4c160",
+    "statusBarItem.hoverBackground": "#5a542d"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

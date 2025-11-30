@@ -55,7 +55,7 @@ const projectSection: IProjectSection[] = [
     title: 'YTMusic «≈» Spotify',
     link: 'https://flip.peteplays.com/',
     description:
-      'Cross-Platform Link Converter: Share music effortlessly. Simply paste a link for any Artist, Album, or Song from YouTube Music or Spotify to instantly receive the corresponding link for that item on the alternative service.',
+      'Cross-Platform Link Converter: Share music effortlessly. Simply paste a link for any Artist, Album, or Song from YouTube Music or Spotify to instantly receive the corresponding link for that item on the other service.',
   },
   {
     title: 'Lorem Bitters',

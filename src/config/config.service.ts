@@ -52,10 +52,10 @@ const sections: ISections[] = [
 
 const projectSection: IProjectSection[] = [
   {
-    title: 'YTMusic to Spotify',
+    title: 'YTMusic «≈» Spotify',
     link: 'https://flip.peteplays.com/',
     description:
-      'Paste in a link to a song from YTMusic or Spotify and get the link to the same song on the other platform',
+      'Cross-Platform Link Converter: Share music effortlessly. Simply paste a link for any Artist, Album, or Song from YouTube Music or Spotify to instantly receive the corresponding link for that item on the alternative service.',
   },
   {
     title: 'Lorem Bitters',
@@ -66,11 +66,6 @@ const projectSection: IProjectSection[] = [
     title: 'Doggy ID',
     link: 'https://doggy.peteplays.com/',
     description: 'Doggy ID for service dogs',
-  },
-  {
-    title: "Pete's Food Blog",
-    link: 'https://peteplays.wordpress.com/',
-    description: 'Check out some awesome food. (There is a lot of pizza)',
   },
 ];
 
